@@ -1,2 +1,2 @@
-npm check
-npm format
+yarn run check
+yarn format

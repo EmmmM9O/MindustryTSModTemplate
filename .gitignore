@@ -8,3 +8,7 @@ jars
 **/tmp
 tmp
 types/
+**/types/
+**/build/
+**/gen
+gen

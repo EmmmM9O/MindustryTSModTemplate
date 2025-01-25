@@ -20,7 +20,17 @@ export default [
       "@typescript-eslint/no-unused-vars": "warn",
       "@typescript-eslint/triple-slash-reference": "off",
       "prefer-const": "off",
+      "@typescript-eslint/no-require-imports": "off",
     },
+  },
+  {
+    ignores: [
+      "**/build",
+      "**/types",
+      "build",
+      "types",
+      "test.d.ts",
+    ],
   },
   eslintConfigPrettier,
 ];

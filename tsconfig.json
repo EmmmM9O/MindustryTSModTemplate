@@ -1,12 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "CommonJS",
     "baseUrl": ".",
-    "paths": {
-      "*": ["src/*"]
-    },
-    "outDir": "./build",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": false,
@@ -14,10 +8,19 @@
     "strictNullChecks": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
-    "types": ["mindustry-types"],
-    "declaration": true,
-    "declarationDir": "./types"
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@root/*": ["./*"],
+      "@Oroot/*": ["./*"],
+      "@raw/*": ["./raw/src/*"],
+      "@tools/*": ["./tools/src/*"]
+    }
   },
-  "include": ["./src/**/*"],
-  "exclude": ["./node_modules"]
+  "include": ["./main/src", "./content"],
+  "exclude": [
+    "./node_modules",
+    "./types",
+    "./dist",
+    "./build"
+  ]
 }

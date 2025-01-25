@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "outDir": "../build",
+    "types": ["mindustry-types", "node"],
+    "paths": {
+      "@root/*": ["../*"],
+      "@Oroot/*": ["../*"],
+      "@raw/*": ["../raw/src/*"],
+      "@config/*": ["../raw/*"],
+      "@tools/*": ["../tools/src/*"]
+    }
+  },
+  "include": ["./src", "./*.config.ts"]
+}

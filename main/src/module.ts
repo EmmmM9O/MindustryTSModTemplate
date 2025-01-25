@@ -3,3 +3,8 @@ export class TestM {
     Log.info("testModule");
   }
 }
+export class Te extends Table {
+  constructor() {
+    super();
+  }
+}

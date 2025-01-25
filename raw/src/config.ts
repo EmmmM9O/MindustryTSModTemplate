@@ -18,11 +18,23 @@ export interface ModConfig {
 }
 export interface DistConfig {
   distDir: string;
-  assetsDir: string;
   tmpDir: string;
-  buildDir: string;
   name: string;
+  buildDir: string[];
+  assetsDir: Array<string | [string, string]>;
   buildCommand: string;
-  source?: string;
-  others?: string[];
+  source?: Array<string | [string, string]>;
+  others?: Array<string | [string, string]>;
+}
+export interface BundleConfig {
+  bundleDir: string;
+  metaDir: string;
+  metaFileName: string;
+  funcName: string;
+}
+export interface ContentConfig {
+  contentDir: string;
+  metaDir: string;
+  metaFileName: string;
+  funcName: string;
 }

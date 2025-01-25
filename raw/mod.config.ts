@@ -1,5 +1,5 @@
-/** @type {import("./scripts/config").ModConfig} */
-export default {
+import { ModConfig } from "@raw/config";
+const M: ModConfig = {
   name: "tsmod",
   minGameVersion: "146",
   author: "EmmmM9O",
@@ -7,3 +7,4 @@ export default {
   description: "A mod written in ts",
   version: "1.0.0",
 };
+export default M;

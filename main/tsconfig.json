@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES5",
+    "module": "CommonJS",
+    "paths": {
+      "*": ["./src/*"]
+    },
+    "outDir": "./build",
+    "types": ["mindustry-types"],
+    "declaration": true,
+    "declarationDir": "./types"
+  },
+  "include": ["./src"]
+}
