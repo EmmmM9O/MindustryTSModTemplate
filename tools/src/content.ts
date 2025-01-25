@@ -428,7 +428,7 @@ export type MindustryContent = PluginBuilder<{
     block: {
       consumes?: {
         remove?: LazyValue<Consumes[keyof Consumes]>;
-        item?:LazyValue<string>
+        item?: LazyValue<string>;
       };
     } & BundleType;
   };

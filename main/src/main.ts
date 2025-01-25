@@ -24,4 +24,3 @@ Events.on(ClientLoadEvent, (_) => {
 let t = new TestM();
 t.test();
 new Packages.mindustry._I_type.Item("test");
-
